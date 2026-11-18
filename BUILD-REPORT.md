@@ -60,7 +60,16 @@ bundling is the parent's job):
 
 ## Final check
 
-(to be filled after the final commit — re-run of `check` above)
+Re-ran `check` at commit `2dc8c04` (README + screenshot unchanged since):
+
+- **5 passed, 1 failed, 14 skipped.** `guide_page` PASSES: README.md
+  (21,382 bytes) carries referral link h9p10zvy, screenshot.png (1,691,309
+  bytes) is a PNG, 1280×9268. Also passing: competition_open, snapshot,
+  license_osi (MIT), repo_created_after_open.
+- The only failure is `transcripts_present` — no transcripts uploaded yet.
+  Expected: the parent bundles this session (id
+  `df73a653-06ad-4b59-8cd2-22073fe7af93`) with `--muse-usage` and re-runs the
+  check with `--transcripts` before submitting.
 
 ## Status
 
